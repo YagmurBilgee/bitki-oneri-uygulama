@@ -10,8 +10,9 @@ st.markdown("Toprak ve iklim ozelliklerine gore en uygun bitki onerisini alabili
 
 @st.cache_resource
 def load_model():
-     model = joblib.load("crop_model_rf.pkl")
-    scaler = joblib.load("crop_scaler.pkl")
+    model = joblib.load("model/best_model.pkl")
+    scaler = joblib.load("model/scaler.pkl")
+
     
 
     with open("model/model_info.txt", "r") as f:

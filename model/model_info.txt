@@ -1,0 +1,4 @@
+Model: RandomForest
+Feature selection: SelectKBest
+Features: N, P, K, humidity, rainfall
+F1-score: 0.9926
